@@ -9,7 +9,7 @@
             Spacing="25">
 
             <Label
-                Text="Use Flyout and click 'Test Return'"
+                Text="Use Flyout and click 'Return to MainPage'"
                 Style="{StaticResource SubHeadline}" />
             
         </VerticalStackLayout>
