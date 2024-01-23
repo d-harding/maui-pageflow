@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp_PageFlow.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp_PageFlow"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.ForegroundColor="Black"
+    Title="MauiApp_PageFlow">
+
+    <ShellContent
+        Title="Home"
+        FlyoutItemIsVisible="False"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <!--FlyoutItems - Back to LauncherLogin -->
+    <FlyoutItem Title="Back to MainPage"
+                Route="MainPage"
+                FlyoutItemIsVisible="false">
+        <ShellContent FlyoutItemIsVisible="True"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>        
+    </FlyoutItem>
+
+    <FlyoutItem Title="SubMainPage"
+                Route="SubMainPage"
+                FlyoutItemIsVisible="false">
+        <ShellContent Shell.TabBarIsVisible="false"
+                  ContentTemplate="{DataTemplate local:SubMainPage}"/>
+    </FlyoutItem>
+
+    <MenuItem Text="Return to MainPage"
+          Command="{Binding TestCommand}"/>
+
+</Shell>

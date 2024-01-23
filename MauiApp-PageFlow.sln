@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp-PageFlow", "MauiApp-PageFlow.csproj", "{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5641E0-5F20-4614-90A3-B2CEF145B4DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11DA909D-1CFE-4789-91AD-D11FBE8FAB66}
+	EndGlobalSection
+EndGlobal
