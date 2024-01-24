@@ -7,4 +7,4 @@ Steps to reproduce:
 4. Click "Go to SubMainPage"
 5. Open Flyout and click "Return to MainPage"
 
-When "Return to MainPage" is clicked, the command is executing the following `await Shell.Current.GoToAsync($"///{nameof(MainPage)}/");`.  This should return the user directly to the page based on the URL, however, OnAppearing will be triggered for `Page2`, which is unwanted and not desired.
+When "Return to MainPage" is clicked, the command is executing the following `await Shell.Current.GoToAsync($"//{nameof(MainPage)}");`.  This should return the user directly to the page based on the URL, however, OnAppearing will be triggered for `Page2`, which is unwanted and not desired.
