@@ -22,7 +22,7 @@ namespace MauiApp_PageFlow
         {
             await Application.Current.Dispatcher.DispatchAsync(async () =>
             {
-                await Shell.Current.GoToAsync($"///{nameof(SubMainPage)}");
+                await Shell.Current.GoToAsync($"//{nameof(SubMainPage)}");
             });
         });
     }
