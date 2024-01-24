@@ -17,5 +17,14 @@ namespace MauiApp_PageFlow
             Console.WriteLine("==============================================");
             Console.WriteLine("OnAppearing: SubMainPage");
         }
+
+        public ICommand MainPageCommand => new Command(async () =>
+        {
+            await Application.Current.Dispatcher.DispatchAsync(async () =>
+            {
+                await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                //await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
+            });
+        });
     }
 }

@@ -8,25 +8,22 @@
     Shell.ForegroundColor="Black"
     Title="MauiApp_PageFlow">
 
-    <ShellContent
-        Title="Home"
-        FlyoutItemIsVisible="False"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
-    <!--FlyoutItems - Back to LauncherLogin -->
-    <FlyoutItem Title="Back to MainPage"
+    <!--Starting Page-->
+    <ShellContent Title="Home"
+                  FlyoutItemIsVisible="False"
+                  ContentTemplate="{DataTemplate local:MainPage}"
+                  Route="MainPage" />
+    
+    <!--MainPage Children-->
+    <FlyoutItem Title="MainPage"
                 Route="MainPage"
                 FlyoutItemIsVisible="false">
-        <ShellContent FlyoutItemIsVisible="True"
-                      ContentTemplate="{DataTemplate local:MainPage}"/>        
-    </FlyoutItem>
 
-    <FlyoutItem Title="SubMainPage"
-                Route="SubMainPage"
-                FlyoutItemIsVisible="false">
-        <ShellContent Shell.TabBarIsVisible="false"
-                  ContentTemplate="{DataTemplate local:SubMainPage}"/>
+        <ShellContent Title="SubMainPage"
+                      Route="SubMainPage"
+                      FlyoutItemIsVisible="false"
+                      Shell.TabBarIsVisible="false"
+                      ContentTemplate="{DataTemplate local:SubMainPage}"/>
     </FlyoutItem>
 
     <MenuItem Text="Return to MainPage"

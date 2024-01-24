@@ -33,6 +33,7 @@ namespace MauiApp_PageFlow
             await Application.Current.Dispatcher.DispatchAsync(async () =>
             {
                 await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                //await Shell.Current.GoToAsync("..");
             });
         });
     }
